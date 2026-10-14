@@ -1,0 +1,12 @@
+# 平球動漫角色圖素材
+
+使用 imagegen 技能的內建生圖工具，透明背景開啟；未使用外部付費影片服務。
+參考圖僅鎖定角色外觀／服裝，不沿用高遠球姿勢或原攝影球場。
+來源：`preview/drive_lesson/character_atlas_v1.png`。
+四個等比例去背 PNG：`assets/images/drive/{ready,backswing,contact,recovery}.png`。
+裁切完整角色邊界後等比例縮放並對齊腳部，沒有拉伸、移除球拍或人工去背。
+這是示意插圖，不是實拍照片、精確握拍模型或教練驗證過的教材。
+
+## 完整提示詞
+
+Use case: identity-preserve. Asset type: transparent badminton teaching character pose atlas for a Flutter app. Input image is ONLY the character identity and outfit/style reference; do not copy its overhead-clear action or photographic court. Create one exact regular 2-column by 2-row atlas, each cell the same dimensions, on a truly transparent alpha background. Exactly four unobstructed full-body poses of the SAME young male Japanese sports-anime athlete: short tousled dark brown hair, same face, black jersey with purple and blue diagonal accents, navy shorts, white badminton shoes. Identical thin-rim badminton racket with yellow grip in his RIGHT hand, complete racket head/shaft/strings clearly visible in EVERY cell. All head, feet, fingers and racket remain within each cell with generous padding; never crop or let cells overlap. Fixed three-quarter side view, athlete faces viewer-right, consistent head scale, proportions and foot baseline in all four cells. These are RIGHT-HANDED FOREHAND DRIVE actions, NOT overhead clear or smash: no jump, no overhead racket, no raised racket behind head. Reading order: top left READY, knees slightly flexed, balanced feet, racket in front at chest level, right elbow bent, left hand near torso for balance. Top right SHORT BACKSWING, right elbow retracts only slightly beside torso and racket at lower-chest level to right side, SMALL backswing, no big arm swing behind the body. Bottom left CONTACT, right forearm extends forward, contact point in front of body; racket head clearly to viewer-right at lower-chest height with its face visible; compact level forehand stroke, feet balanced. Bottom right RECOVERY, right arm and racket returned in front of chest, ready for next shuttle, a recognizably relaxed ready stance. Clean sports-anime cel shading with crisp lines, anatomically coherent arms and hands; do not morph face or clothing between poses. No shuttlecock, no arrows, no labels, no numbers, no text, no panel frames, no background, no floor shadows. Leave transparent margins between the four characters. This is a static picture demonstration for beginners, so recognizable human posture and intact racket matter more than dramatic action.
