@@ -35,7 +35,7 @@ void main() {
       expect(bytes[25], anyOf(2, 6));
       expect(bytes.length, lessThan(2000000));
     }
-    expect(trainingSkills, hasLength(12));
+    expect(trainingSkills, hasLength(13));
     expect(trainingSkills.any((s) => s.name == beginnerCourseName), isFalse);
     expect(gripLessonSteps[1].scope, contains('不能直接套用'));
   });
@@ -125,7 +125,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(tester.binding.hasScheduledFrame, isFalse);
   });
-  testWidgets('我的學習包括入門讀取及總數12', (tester) async {
+  testWidgets('我的學習包括入門讀取及總數14', (tester) async {
     SharedPreferences.setMockInitialValues({
       'skill_progress_$beginnerCourseName': 100,
     });
@@ -142,7 +142,7 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
-    expect(find.text('1 / 13 教材已讀'), findsOneWidget);
+    expect(find.text('1 / 14 教材已讀'), findsOneWidget);
     await reveal(tester, find.byKey(const ValueKey('training-beginner-grips')));
     expect(find.textContaining('教材已讀（本機）'), findsOneWidget);
     expect(tester.takeException(), isNull);

@@ -13,7 +13,7 @@ import 'package:video_player/video_player.dart';
 void main() {
   test('十一項教材皆有圖解與時機，新增發球不進入原本九項 AI 選单', () {
     expect(illustratedLessons.length, trainingSkills.length);
-    expect(illustratedLessons.map((l) => l.key).toSet(), hasLength(12));
+    expect(illustratedLessons.map((l) => l.key).toSet(), hasLength(13));
     expect(badmintonSkills, hasLength(9));
     for (final skill in trainingSkills) {
       final lesson = lessonFor(skill.name);
@@ -35,7 +35,9 @@ void main() {
         expect(
           bytes.length,
           lessThan(
-            lesson.assetAt(i).contains('-v2') || lesson.key == 'net_kill'
+            lesson.assetAt(i).contains('-v2') ||
+                    lesson.key == 'net_kill' ||
+                    lesson.key == 'push'
                 ? 1000000
                 : 200000,
           ),
