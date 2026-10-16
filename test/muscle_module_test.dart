@@ -15,7 +15,7 @@ void main() {
 
     expect(clear.phases, hasLength(6));
     expect(smash.phases, hasLength(7));
-    expect(muscleSkills, hasLength(12));
+    expect(muscleSkills, hasLength(13));
     expect(muscleSkills.where((skill) => !skill.isAvailable), isEmpty);
     expect(clear.contactSeconds, isEmpty);
     expect(smash.contactSeconds, isEmpty);

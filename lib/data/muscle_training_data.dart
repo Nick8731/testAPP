@@ -64,6 +64,7 @@ const muscleExercises = <String, MuscleExercise>{
 };
 
 const muscleExerciseKeys = <String, List<String>>{
+  '推球': ['forearm', 'legs', 'core', 'shoulder'],
   '撲球': ['forearm', 'legs', 'core', 'shoulder'],
   '高遠球': ['shoulder', 'core', 'legs', 'forearm'],
   '殺球': ['shoulder', 'core', 'glutes', 'legs'],
@@ -79,6 +80,7 @@ const muscleExerciseKeys = <String, List<String>>{
 };
 
 const muscleRoleNotes = <String, String>{
+  '推球': '右腳淺跨步與核心維持觸球位置穩定；肩帶支撐球拍在前，前臂與手指以短促握放控制拍面和前送。推球不需要撲殺的向下加速，也不能只靠手腕猛甩。',
   '撲球': '右腳跨步由臀肌、股四頭肌與核心穩定支撐；網帶上方觸球時，前臂及手指短促握放控制下壓，肩帶支撐拍面。不需殺球的大幅動力鏈，也不單靠食指硬壓。',
   '高遠球': '架拍不是只把手肘抬高：肩胛配合上轉、肩袖維持控制；轉體後，伸肘與前臂旋轉配合觸球。',
   '殺球': '速度來自到位、連續轉體與揮拍，不是全程繃緊。隨揮也需要肩帶與軀幹控制減速，先教不跳殺。',

@@ -17,6 +17,15 @@ class ShotRoute {
 
 /// Court-normalized top-down positions. Illustrative choices, not prediction.
 const shotRoutes = <String, ShotRoute>{
+  'push': ShotRoute(
+    '我方前場身前可控點',
+    '對方中場空檔',
+    '短促向前、較平直',
+    '越過網前球員或推向空檔，讓對手較難在網前搶攻；落點依站位調整。',
+    '本圖只示一條直線推球；不是向下撲殺，也不是從低點挑向後場。先求過網與控制，不盲目加力。',
+    (.65, .58),
+    (.65, .26),
+  ),
   'net_kill': ShotRoute(
     '我方前場網帶上方',
     '對方前場／中場空檔',

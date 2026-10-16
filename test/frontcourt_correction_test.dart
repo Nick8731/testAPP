@@ -47,4 +47,22 @@ void main() {
     expect(badmintonSkills.any((s) => s.name == '撲球'), isFalse);
     expect(badmintonSkills, hasLength(9));
   });
+
+  test('推球只新增教材、球路與肌群，不進入既有 AI 評分項目', () {
+    final lesson = lessonFor('推球');
+    expect(lesson.key, 'push');
+    expect(lesson.steps, hasLength(4));
+    expect(groupFor('推球').name, '前場');
+    expect(lesson.steps[1].how, contains('右腳'));
+    expect(lesson.steps[2].how, contains('短促推向'));
+    expect(lesson.steps[2].avoid, contains('撲殺'));
+    expect(lessonTiming[lesson.key]!.contactStep, 2);
+    expect(shotRoutes[lesson.key]!.trajectory, contains('向前'));
+    final muscles = muscleSkills.firstWhere((s) => s.skillName == '推球');
+    expect(muscles.isAvailable, isTrue);
+    expect(muscles.phases, hasLength(4));
+    expect(muscles.phases[2].forceDescription, contains('前送'));
+    expect(badmintonSkills.any((s) => s.name == '推球'), isFalse);
+    expect(badmintonSkills, hasLength(9));
+  });
 }

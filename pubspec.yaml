@@ -72,6 +72,7 @@ flutter:
     - assets/images/lessons/drop/
     - assets/images/lessons/slice/
     - assets/images/lessons/net/
+    - assets/images/lessons/push/
     - assets/images/lessons/net_kill/
     - assets/images/lessons/defence/
     - assets/images/lessons/split/

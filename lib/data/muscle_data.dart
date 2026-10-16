@@ -52,7 +52,7 @@ final muscleSkills = trainingSkills
         overview: muscleRoleNotes[skill.name]!,
         forceChain: lesson.key == 'serve_short'
             ? ['站穩', '拍面定位', '拇指支撐', '短促前送', '快收拍']
-            : lesson.key == 'net'
+            : lesson.key == 'net' || lesson.key == 'push'
             ? ['穩定跨步', '軀幹控制', '前臂／手指控制', '推回準備']
             : lesson.key == 'net_kill'
             ? ['右腳跨步支撐', '肩帶穩定拍面', '前臂／手指短促握放', '短隨揮／推回']

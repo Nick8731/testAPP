@@ -64,7 +64,7 @@ void main() {
   test('每課只屬一個情境分類，問題入口只指向存在課程，球路不混淆', () {
     final names = trainingSkills.map((s) => s.name).toSet();
     final grouped = trainingGroups.expand((g) => g.skills).toList();
-    expect(grouped, hasLength(12));
+    expect(grouped, hasLength(13));
     expect(grouped.toSet(), names);
     for (final p in trainingProblems) {
       expect(p.explanation, isNotEmpty);

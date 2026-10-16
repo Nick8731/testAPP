@@ -174,8 +174,8 @@ void main() {
       expect(tester.binding.hasScheduledFrame, isFalse);
     });
   }
-  test('12項肌群教材精確對應53張分解圖，全部含功能角色與可選強化', () {
-    expect(muscleSkills, hasLength(12));
+  test('13項肌群教材精確對應57張分解圖，全部含功能角色與可選強化', () {
+    expect(muscleSkills, hasLength(13));
     var phases = 0;
     for (final skill in muscleSkills) {
       final lesson = lessonFor(skill.skillName);
@@ -202,7 +202,7 @@ void main() {
         expect(exercise.purpose, isNotEmpty);
       }
     }
-    expect(phases, 53);
+    expect(phases, 57);
   });
   for (final skill in muscleSkills) {
     testWidgets('${skill.skillName}肌肉頁320寬大字體切換全部階段與強化說明', (tester) async {

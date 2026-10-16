@@ -1,6 +1,7 @@
 /// Hand-reviewed locations on the *illustration* (not a detected shuttle or
 /// prescribed physical angle). Normalized to the padded 512x512 PNG.
 const lessonContactPoints = <String, (double, double)>{
+  'push': (.900, .245),
   'net_kill': (.882, .182),
   'serve_short': (.780, .549),
   'serve_high': (.720, .620),

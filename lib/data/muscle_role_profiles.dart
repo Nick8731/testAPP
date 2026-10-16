@@ -129,7 +129,9 @@ MuscleRoleProfile roleFor(String key, int index, int contact) {
   if (key == 'split') return index >= 1 ? splitPush : legSupport;
   if (index == 0 ||
       index ==
-          ((key == 'lift' || key == 'net' || key == 'net_kill') ? 1 : -1) ||
+          ((key == 'lift' || key == 'net' || key == 'push' || key == 'net_kill')
+              ? 1
+              : -1) ||
       index > (contact + 1)) {
     return legSupport;
   }
@@ -141,7 +143,7 @@ MuscleRoleProfile roleFor(String key, int index, int contact) {
     return deceleration;
   }
   if (index > contact) return key == 'serve_high' ? deceleration : legSupport;
-  if (key == 'net') return netControl;
+  if (key == 'net' || key == 'push') return netControl;
   if (key == 'net_kill') return netKillControl;
   if (key == 'lift') return liftControl;
   if (key == 'serve_high') return serveControl;
